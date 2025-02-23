@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Почта"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Пароль"/>
+
+    <Spinner
+        android:id="@+id/roleSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Добавить" />
+
+</LinearLayout>

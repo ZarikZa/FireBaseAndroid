@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "357579259332",
+    "project_id": "piska-34963",
+    "storage_bucket": "piska-34963.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357579259332:android:9be1ce2c09726dc1817891",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsJc8sa3E3vtnqs4PYiPIQasMvDFQcvnw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

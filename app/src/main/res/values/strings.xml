@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FireBase</string>
+    <string-array name="roles_array">
+        <item>admin</item>
+        <item>user</item>
+        <item>eployee</item>
+    </string-array>
+</resources>
