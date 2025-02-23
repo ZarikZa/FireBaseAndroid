@@ -65,15 +65,13 @@ public class OpenPageActivity extends AppCompatActivity {
         if (user != null) {
             Map<String, Object> servece = new HashMap<>();
             servece.put("serviceName", newName);
-            DocumentReference docRef = db.collection("services").document(id);
-            docRef.update(servece).addOnSuccessListener(documentReference -> {
+            db.collection("services").document(id).update(servece).addOnSuccessListener(documentReference -> {
                         Toast.makeText(this, "Услуга обновлена", Toast.LENGTH_SHORT).show();
 
                         Map<String, Object> log = new HashMap<>();
                         log.put("action", "Изменение услуги");
                         log.put("details", "Новое название: " + newName);
                         log.put("adminId", user.getUid());
-
                         db.collection("admin_logs").add(log)
                                 .addOnSuccessListener(logDocumentReference -> {
                                 })
@@ -101,7 +99,6 @@ public class OpenPageActivity extends AppCompatActivity {
                         log.put("action", "Удаление услуги");
                         log.put("details", "ID услуги: " + id);
                         log.put("adminId", user.getUid());
-
                         db.collection("admin_logs").add(log)
                                 .addOnSuccessListener(logDocumentReference -> {
                                 })

@@ -48,7 +48,7 @@ public class UserActivity extends AppCompatActivity {
         bookServicesButton = findViewById(R.id.bookServiceButton);
         searchField = findViewById(R.id.searchField);
         searchButton = findViewById(R.id.searchButton);
-        clearSearchButton = findViewById(R.id.clearSearchButton); // Инициализация кнопки очистки
+        clearSearchButton = findViewById(R.id.clearSearchButton);
         servicesList = new ArrayList<>();
         ID = new ArrayList<>();
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_single_choice, servicesList);

@@ -73,7 +73,7 @@ public class AuthActivity  extends AppCompatActivity {
         Map<String,Object> user = new HashMap<>();
         user.put("email", email);
         user.put("pass", pass);
-        user.put("role", "admin");
+        user.put("role", "user");
         db.collection("users").document(auth.getCurrentUser().getUid()).
             set(user).addOnSuccessListener(v-> {
                     Toast.makeText(AuthActivity.this, "Данные пользователя сохранены", Toast.LENGTH_SHORT).show();
